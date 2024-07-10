@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=document.createElement("center");
+        var b=document.createElement("img");
+        b.setAttribute("src","./photo/Passport photo.png");
+        b.style.width="100px";
+        b.style.height="100px";
+        var c=document.createElement("h3");
+        var d=document.createTextNode("P.Lohith");
+        c.appendChild(d);
+        a.append(c,b);
+        document.body.appendChild(a);
+        var e=document.createElement("hr");
+        document.body.appendChild(e);
+        var f=document.createElement("div");
+        var g=document.createElement("h4");
+        var h=document.createTextNode("CARRER OBJECTIVE");
+        g.appendChild(h);
+        var i=document.createElement("p");
+        var j=document.createTextNode("Looking for a challenging role in a reputable organization to utilize my technical skills for the growth of the organization as well as to enhance my knowledge about new and emerging technologies in the IT sector.")
+        i.appendChild(j);
+        f.append(g,i);
+        var k=document.createElement("hr");
+        document.body.append(f,k);
+        var l=document.createElement("table");
+        l.style.border="2px black solid";
+        l.style.borderCollapse="separate";
+        var m=document.createElement("tr"); //
+        var n=document.createElement("th");
+        n.innerText="Institution";
+        var o=document.createElement("th");
+        o.innerText="Degree";
+        var p=document.createElement("th");
+        p.innerText="Year";
+        var q=document.createElement("th");
+        q.innerText="Percentage";
+        m.append(n,o,p,q);
+        var r=document.createElement("tr"); //
+        var s=document.createElement("td");
+        s.innerText="jntu";
+        var t=document.createElement("td");
+        t.innerText="B.tech";
+        var u=document.createElement("td");
+        u.innerText="2023";
+        var v=document.createElement("td");
+        v.innerText="7.39";
+        r.append(s,t,u,v);
+        var w=document.createElement("tr"); //
+        var x=document.createElement("td");
+        x.innerText="Sri Chaitanya Academy";
+        var y=document.createElement("td");
+        y.innerText="Intermediate";
+        var z=document.createElement("td");
+        z.innerText="2019";
+        var a1=document.createElement("td");
+        a1.innerText="9.6";
+        w.append(x,y,z,a1);
+        var b1=document.createElement("tr"); //
+        var c1=document.createElement("td");
+        c1.innerText="CRRR high school";
+        var d1=document.createElement("td");
+        d1.innerText="10th class";
+        var e1=document.createElement("td");
+        e1.innerText="2017";
+        var f1=document.createElement("td");
+        f1.innerText="9.8";
+        b1.append(c1,d1,e1,f1);
+        l.append(m,r,w,b1);
+        document.body.append(l);
+        var ge=document.getElementsByTagName("tr");
+        console.log(ge);
+        Array.from(ge).forEach(function(val,index){
+            val.style.border="2px black solid";
+            val.style.borderCollapse="separate";
+        });
+        var h1=document.getElementsByTagName("th");
+        Array.from(h1).forEach(function(val,index){
+            val.style.border="2px black solid";
+            val.style.borderCollapse="separate";
+        })
+        var i1=document.getElementsByTagName("td");
+        Array.from(i1).forEach(((val)=>{
+            val.style.border="2px solid black";
+            val.style.borderCollapse="collapse";
+        }))
+        var j1=document.createElement("hr");
+        document.body.appendChild(j1);
+        var k2=document.createElement("h3");
+        k2.innerText="Skills:";
+        document.body.appendChild(k2);
+        var k1=document.createElement("ul");
+        var l1=document.createElement("li");
+        l1.innerText="Java";
+        var m1=document.createElement("li");
+        m1.innerText="Sql";
+        var n1=document.createElement("li");
+        n1.innerText="Dbms";
+        var o1=document.createElement("hr");
+        k1.append(l1,m1,n1);
+        document.body.appendChild(k1);
+        document.body.appendChild(o1);
+        var k2=document.createElement("h3");
+        k2.innerText="Hobbies:";
+        document.body.appendChild(k2);
+        var k1=document.createElement("ul");
+        var l1=document.createElement("li");
+        l1.innerText="Cricket";
+        var m1=document.createElement("li");
+        m1.innerText="Current Affairs";
+        var n1=document.createElement("li");
+        n1.innerText="Travel";
+        var o2=document.createElement("hr");
+        k1.append(l1,m1,n1);
+        document.body.append(k1,o2);
+        var ee1=document.createElement("h3");
+        ee1.innerText="Declaration:";
+        var ee2=document.createElement("p");
+        ee2.innerText="All information in this resume is true and correct to the best of my knowledge and belief";
+        var o3=document.createElement("hr");
+        document.body.append(ee1,ee2,o3);
+    </script>
+</body>
+</html>

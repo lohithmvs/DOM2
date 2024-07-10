@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=["volvo","vw","ferrari","bmw","benz","toyato"];
+        var a=document.createElement("select");
+        for(let i=0;i<str.length;i++){
+            var b=document.createElement("option");
+            b.innerText=str[i];
+            a.appendChild(b);
+        }
+        document.body.appendChild(a);
+        a.addEventListener('change', function() {
+            var selectedValue = a.value;
+            console.log(selectedValue);
+            if (selectedValue.length % 2 === 0) {
+                console.log(1);
+            } else {
+                console.log(0);
+            }
+        });
+
+    </script>
+</body>
+</html>
